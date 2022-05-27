@@ -1,0 +1,613 @@
+*{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Lato', sans-serif; } 
+p{
+    color: #2a4542;
+    font-weight: 400;
+    font-size: .9.5rem;
+
+}
+
+a{text-decoration: none !important;}
+
+
+/* <!-- ************************header start ****************************** --> */
+.container a{
+    color: #fff;
+    font-weight: 600;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,168,255,0.3) , rgba(0,168,255,0.3)), url(../images/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    clip-path: polygon(100% 0% , 100% 75%, 50% 100% , 0% 75% , 0 0 );
+    position: relative;
+    color: white ;
+    }
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: 0.3;
+    z-index: -1;
+    background: linear-gradient(to right , #1e5799 0% , #3ccdbb 0%, #196274 100%);
+}
+
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: 0.3;
+    z-index: -1;
+    background: linear-gradient(to right , #1e5799 0% , #3ccdbb 0%, #16c9f6 100%);
+
+}
+
+.nav-item a{
+    color: rgb(255, 255, 255)!important;
+    font-weight: 700;
+    letter-spacing: .10rem;
+}
+
+.hero{
+    width: 100%;
+    height: inherit;
+    position: relative;
+    
+} 
+ .hero-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+
+.bold-h1{
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-top: 50px;
+
+}
+
+.hero-div p{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+    margin: 0.8rem auto 2.3rem auto;
+}
+.hero-buttons a{
+    padding: 12px 32px;
+    border: 1px solid white;
+    border-radius: 100px;
+    margin: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    
+}
+
+.hero-buttons a:hover{
+    background-color: #fff;
+    transform: translateY(-20px);
+    
+}
+
+/* <!-- ************************header end ****************************** --> */
+
+/* <!-- ************************hero-feature start ****************************** --> */
+.hero-feature{
+    text-align: center;
+    margin: 7rem auto;
+}
+
+.hero-feature h2{
+    font-size: 19px;
+    font-weight: 600;
+    margin: 30px;
+}
+
+.hero-feature p{
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.596);
+}
+.icon{
+    color: #83C5DA;
+    
+}
+.hero-feature .box{
+    padding: 1rem;
+}
+.hero-feature .box:hover{
+    box-shadow: 0 0 20px #84C8DA;
+    transform: translateY(-20px);
+    transition: .5s;
+}
+/* <!-- ************************hero-feature end ****************************** --> */
+
+/* <!-- ************************Service div start  ****************************** --> */
+
+.service-intro{
+    margin-bottom: 5rem;
+
+}
+.service{
+    background-color:#eeeeee8e;
+    padding: 50px;
+}
+.service h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.names h1{
+    font-size: .8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+.servicediv h2{
+    font-size: 19px;
+    font-weight: 600;
+}
+.servicediv icon{
+    width: 10px;
+}
+
+.progress{
+    height: .7rem !important;
+}
+
+.service-icon{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+/* <!-- ************************Service div end  ****************************** --> */
+
+
+/* <!-- ************************Projects Completed  start ****************************** --> */
+.project{
+    margin: 50px;
+}
+.project p{
+    font-weight: 600;
+    margin-bottom: 7%;
+}
+/* <!-- ************************Projects Completed  end ****************************** --> */
+
+
+/* <!-- ************************Price Start****************************** --> */
+.pricing{
+    padding: 70px;
+    background-color: none;
+    position: relative;
+    /* height: ; */
+}
+.pricing::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+    background: linear-gradient(160deg, #16c9f6 50% , white 50%);
+
+}
+.card-header{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.card:hover .card-header{
+    color:  #65C18C ;
+}
+.card-body li{
+    font-size: 1rem;
+    list-style-type: none;
+    font-weight: lighter;
+    line-height: 2.3rem;
+    color: rgba(0, 0, 0, 0.621);
+}
+.card-body span{
+    font-size: 2.1rem;
+}
+.card:hover .card-body span{
+    color: #65C18C;
+}
+
+.card-footer button{
+    padding: 12px 32px;
+    border: 1px solid #81BED4;
+    border-radius: 100px;
+    margin: 8px;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 600;
+    background-color: white;
+    color: #81bed4;
+
+}
+
+.card:hover .card-footer button{
+        background-color: #65C18C;
+        color: white ;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.34) ;
+
+}
+
+.card:hover{
+    transition: .8s;
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.393);
+}
+
+/* <!-- ************************Price End****************************** --> */
+
+/* <!-- ************************Testinominal Start ****************************** --> */
+
+.carousel-inner{
+    width: 100%;
+    height: auto;
+    
+    /* padding: 30px 0; */
+}
+
+.box-card{
+    text-align: center;
+    box-shadow: 0 0 10px #2a45424d;
+    padding: 20px;
+    transition: .10s ease;
+    height: auto;
+    /* border: 10x solid black; */
+
+}
+.box-card p{
+    padding: 0px 40px;
+}
+.box-card:hover{
+    background-color: #16c9f6;
+    color: white;
+}
+.box-card:hover p{
+    color: white;
+}
+.box-card h2{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.box-card a img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+}
+.box-card:hover img{
+    border: 3px solid #ffffff;
+}
+.carousel-indicators{
+    position: relative !important;
+    bottom: -400px !important;
+
+}
+.carousel-indicators button{
+    background-color: #16c9f6 !important;
+}
+
+.carousel-control-prev-icon{
+    background-color: #00000063 !important;
+    position: absolute;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    top: 172px;
+    left: 8px;
+    right: 0;
+    bottom: 0;
+}
+
+.carousel-control-next-icon{
+    background-color: #00000063 !important;
+    position: absolute !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    top: 172px;
+    right: 10px;
+    bottom: 0;
+}
+
+/* <!-- ************************Testinominal end ****************************** --> */
+
+/* <!-- ************************Contact Us Start ****************************** --> */
+
+.form-data{
+    width: 50%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px auto;
+
+}
+.form input{
+    margin: 12px;
+    padding: 8px;
+}
+.contact{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* margin-top: 100px; */
+    padding: 100px;
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+    background: linear-gradient(340deg, #16c9f6 50% , white 50%);
+}
+.form button{
+    width: 20%;
+    margin: 0px auto;
+    padding: 10px 28px;
+    border: 1px solid white;
+    border-radius: 100px;
+    /* margin: 8px; */
+    font-size: 1rem;
+    font-weight: 500;
+    color:#ffffff;
+    background-color: transparent;
+}
+
+.form button:hover{
+    background-color: #fff;
+    color: #16c9f6;
+    transform: translateY(10px);
+    transition: .3s ease;
+    
+}
+/* <!-- ************************Contact Us end ****************************** --> */
+
+/* <!-- ************************Newsletter  Start ****************************** --> */
+
+.newsletter{
+    padding: 50px;
+    margin: 50px auto 50px auto;
+
+}
+
+.input-group {
+    border-radius: 30px;
+    width: 80% !important;
+    margin: 0px auto;
+       
+}
+.input-group input{
+    border-radius: 20px;
+}
+
+.input-group span{
+    background-color: #16c9f6;
+    color: white;
+    cursor: pointer;
+    width: 15%;
+    text-align: center;
+    border-radius: 0 100px 100px 0;
+}
+
+/* <!-- ************************Newsletter  End ****************************** --> */
+
+/* <!-- *********************** Footer Start****************************** --> */
+
+.footer{
+    padding: 50px;
+    background-color: #16c9f6;
+    color: white;
+}
+.footer h2{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+   text-shadow: 1px 1px rgba(0, 0, 0, 0.619) ;
+
+}
+.footer p{
+    width: 80%;
+    margin: 20px 0px 20px 0px;
+    font-size: .99rem;
+    line-height: 1.6rem;
+    color: white;
+}
+
+.footer a{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
+    line-height: 1.6rem;
+}
+
+.footer span{
+   width: 30%;
+   background-color: #00000056;
+   
+}
+.footer .input-group{
+   margin: 0;
+}
+
+.copyright p{
+    background-color: #1c7d955f;
+    margin: 25px auto 0px auto;
+    color: white;
+}
+/* <!-- *********************** Footer End****************************** --> */
+
+/* <!-- *********************** Scroll Button***************************** --> */
+#scroll-button i{
+   position: fixed;
+   right: 20px;
+    bottom: 20px;
+    padding: .7rem;
+    border-radius: .7rem;
+    background-color: #15b2d9;
+    cursor: pointer;
+    /* display: none; */
+}
+
+#scroll-button i:hover{
+    background-color: #196274;
+}
+
+/* <!-- *********************** Scroll Button***************************** --> */
+
+/* *****************************media queries ********************************** */
+
+@media screen and (max-width: 756px) {
+ 
+  .box p{
+      margin: 0 20px;
+  }
+
+  .box{
+      margin: 30px 0 10px 0 !important;
+  }
+
+  /* **************************** hero feature ******************** */
+  .servicediv .row {
+      margin:40px 0px 10px 0px;
+  }
+  .service-icon{
+      margin: 20px 0px 0px 0px ;
+  }
+  .servicediv h2{
+      font-size: 1rem;
+      margin: 0px 0 0 20px;
+  }
+  .servicediv p{
+      font-size: .82rem;
+      margin: 10px 0 0 20px;
+      width: 100%;
+  }
+
+  .hero-feature .row{
+      margin: 20px;
+  }
+
+    /* **************************** Project ******************** */
+
+  .project .container div{
+      margin: 20px 12px;
+  }
+  .project .container p{
+      font-size: .7rem;
+  }
+
+    /* **************************** Pricing ******************** */
+
+  .second-card{
+    margin: 20px 0;;
+  }
+
+  .pricing{
+    padding: 25px;
+    background-color: #16c9f6 !important;
+  }
+
+  .extra-test{
+      display: none;
+  }
+
+    /* **************************** Conatact******************** */
+
+
+  .contact{
+      padding: 0;
+      height: auto;
+      margin: 113px 0 0 0;
+  }
+
+  .contact-intro p{
+     margin: 0 32px 10px 32px;
+  }
+
+  
+  .form-data{
+      width: 70%;
+      /* border: 1px solid rgba(0, 0, 0, 0.553); */
+  }
+  .form-data input{
+    border: 1px solid rgba(0, 0, 0, 0.553);
+  }
+  .form button{
+      margin: 10px auto 61px auto;
+      width: 60%;
+  }
+
+    /* **************************** Newsletter******************** */
+
+  .newsletter .bold-h1{
+      font-size: 1.1rem;
+      margin: 50px auto;
+      /* text-align: center !important; */
+  }
+  text-center {
+    text-align:inherit;
+}
+
+.newsletter{
+    padding: 0;
+    position:relative;
+    margin:92px auto 144px auto;
+
+}
+.input-group span{
+        width: 35%;
+        
+}
+
+.newsletter .row{
+    position:absolute;
+    padding-bottom: 40px;
+    /* margin-bottom: 200px; */
+    top: 45px;
+    bottom: 0px;
+
+}
+
+  /* **************************** Footer ******************** */
+
+.footer {
+    padding: 28px;
+}
+.footer p{
+    width: 100%;
+}
+
+.footer .text-center{
+    text-align:justify !important;
+    margin: 25px 0;
+}
+
+.copyright p{
+    margin: 50px auto !important;
+    
+}
+
+}
